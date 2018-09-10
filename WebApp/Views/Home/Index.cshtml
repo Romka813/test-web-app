@@ -1,0 +1,19 @@
+﻿@using System.Web.Optimization
+@model int
+
+<div>
+    @for (int i = 0; i < Model; i++)
+    {
+        <div class="form-group">
+            <label for="input_@i">Argument @i</label>
+            <input id="input_@i" class="form-control argument" type="text"/>
+        </div>
+    }
+    <button id="btnCalculate" class="btn btn-success">Calculate</button>
+    <p id="result"></p>
+</div>
+
+@section Scripts{
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/main")
+}

@@ -1,0 +1,9 @@
+﻿.main {
+    width: 500px;
+    margin: 10px;
+}
+
+.input-validation-error {
+    border-color: red !important;
+    background-color: #fee !important;
+}
